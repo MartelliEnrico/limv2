@@ -1,0 +1,6 @@
+.git
+.vagrant
+.git*
+php_errors.log
+/vendor
+serve.bat

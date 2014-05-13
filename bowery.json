@@ -1,0 +1,10 @@
+{
+  "database": {
+    "image": "mysql"
+  },
+  "web": {
+    "image": "php55",
+    "path": ".",
+    "build": "composer install"
+  }
+}

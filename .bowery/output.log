@@ -1,0 +1,137 @@
+web: Loading composer repositories with package information
+web: Installing dependencies (including require-dev) from lock file
+web:   - Installing symfony/finder (v2.4.4)
+web:     Downloading: connection...web: web:     Downloading: 0%           web:     Downloading: 5%    Downloading: 10%web: web:     Downloading: 25%web:     Downloading: 30%web:     Downloading: 35%web:     Downloading: 40%    Downloading: 45%web: web:     Downloading: 90%    Downloading: 95%web: web:     Downloading: 100%
+web: 
+web:   - Installing symfony/filesystem (v2.4.4)
+web:     Downloading: connection...web: web:     Downloading: 0%               Downloading: 35%web:     Downloading: 70%web:     Downloading: 95%web:     Downloading: 100%
+web: 
+web:   - Installing symfony/console (v2.4.4)
+web:     Downloading: connection...web: web:     Downloading: 0%           web:     Downloading: 5%web:     Downloading: 10%web:     Downloading: 15%web: web:     Downloading: 20%web:     Downloading: 25%web:     Downloading: 30%web:     Downloading: 35%web:     Downloading: 40%web: web:     Downloading: 45%web:     Downloading: 50%web:     Downloading: 55%web:     Downloading: 60%web:     Downloading: 65%web:     Downloading: 70%web:     Downloading: 75%web:     Downloading: 80%    Downloading: 85%web:     Downloading: 90%web:     Downloading: 95%web:     Downloading: 100%web:     Downloading: 100%
+web: 
+web:   - Installing nikic/php-parser (v0.9.4)
+web:     Downloading: connection...web: web:     Downloading: 0%           web:     Downloading: 5%web: web:     Downloading: 10%web: web:     Downloading: 15%web:     Downloading: 20%web:     Downloading: 25%web: web:     Downloading: 30%web:     Downloading: 35%web:     Downloading: 40%web:     Downloading: 45%web: web:     Downloading: 50%web:     Downloading: 55%web:     Downloading: 60%web:     Downloading: 65%web:     Downloading: 70%web:     Downloading: 75%web:     Downloading: 80%web: web:     Downloading: 85%web:     Downloading: 90%web:     Downloading: 95%web:     Downloading: 100%web:     Downloading: 100%
+web: 
+web:   - Installing classpreloader/classpreloader (1.0.2)
+web:     Downloading: connection...web: web:     Downloading: 0%               Downloading: 10%    Downloading: 20%web: web:     Downloading: 100%
+web: 
+web:   - Installing d11wtq/boris (v1.0.8)
+web:     Downloading: connection...web: web:     Downloading: 0%           web:     Downloading: 20%web:     Downloading: 40%web:     Downloading: 90%web:     Downloading: 100%
+web: 
+web:   - Installing filp/whoops (1.0.10)
+web:     Downloading: connection...web: web:     Downloading: 0%           web:     Downloading: 20%web:     Downloading: 35%web:     Downloading: 50%web:     Downloading: 55%    Downloading: 70%web:     Downloading: 75%web:     Downloading: 90%    Downloading: 95%web: web:     Downloading: 100%
+web: 
+web:   - Installing ircmaxell/password-compat (1.0.3)
+web:     Downloading: connection...web: web:     Downloading: 0%               Downloading: 55%web: web:     Downloading: 100%
+web: 
+web:   - Installing jeremeamia/superclosure (1.0.1)
+web:     Downloading: connection...web: web:     Downloading: 0%               Downloading: 20%web:     Downloading: 75%web:     Downloading: 95%web:     Downloading: 100%
+web: 
+web:   - Installing symfony/translation (v2.4.4)
+web:     Downloading: connection...web: web:     Downloading: 0%               Downloading: 5%web: web:     Downloading: 15%    Downloading: 20%web:     Downloading: 25%web:     Downloading: 35%web: web:     Downloading: 45%    Downloading: 50%web:     Downloading: 55%web:     Downloading: 65%    Downloading: 70%web:     Downloading: 75%web:     Downloading: 85%web:     Downloading: 90%web:     Downloading: 95%web:     Downloading: 100%
+web: 
+web:   - Installing symfony/http-foundation (v2.4.4)
+web:     Downloading: connection...web: web:     Downloading: 0%           web:     Downloading: 5%web:     Downloading: 10%web:     Downloading: 15%web:     Downloading: 20%web:     Downloading: 25%web:     Downloading: 30%web:     Downloading: 35%web:     Downloading: 40%web:     Downloading: 45%web:     Downloading: 50%web:     Downloading: 55%web:     Downloading: 60%web:     Downloading: 65%web:     Downloading: 70%web:     Downloading: 75%web:     Downloading: 80%web:     Downloading: 85%web:     Downloading: 90%web:     Downloading: 95%web:     Downloading: 100%web:     Downloading: 100%
+web: 
+web:   - Installing symfony/event-dispatcher (v2.4.4)
+web:     Downloading: connection...web: web:     Downloading: 0%           web:     Downloading: 50%web:     Downloading: 65%web: web:     Downloading: 100%
+web: 
+web:   - Installing symfony/debug (v2.4.4)
+web:     Downloading: connection...web: web:     Downloading: 0%           web:     Downloading: 35%    Downloading: 40%web:     Downloading: 55%web:     Downloading: 90%web: web:     Downloading: 100%
+web: 
+web:   - Installing psr/log (1.0.0)
+web:     Downloading: connection...web: web:     Downloading: 0%           web:     Downloading: 15%    Downloading: 30%    Downloading: 45%web:     Downloading: 60%    Downloading: 75%web: web:     Downloading: 100%
+web: 
+web:   - Installing symfony/http-kernel (v2.4.4)
+web:     Downloading: connection...web: web:     Downloading: 0%           web:     Downloading: 5%web:     Downloading: 10%web: web:     Downloading: 15%web:     Downloading: 20%web:     Downloading: 25%web:     Downloading: 30%web: web:     Downloading: 35%web:     Downloading: 40%web:     Downloading: 45%web:     Downloading: 50%web:     Downloading: 55%web:     Downloading: 60%web:     Downloading: 65%web:     Downloading: 70%web: web:     Downloading: 75%web:     Downloading: 80%web:     Downloading: 85%web:     Downloading: 90%web:     Downloading: 95%web:     Downloading: 100%web: web:     Downloading: 100%
+web: 
+web:   - Installing symfony/security (v2.4.4)
+web:     Downloading: connection...web: web:     Downloading: 0%           web: web:     Downloading: 5%web:     Downloading: 10%web: web:     Downloading: 15%web:     Downloading: 20%web: web:     Downloading: 25%web: web:     Downloading: 30%web:     Downloading: 35%web: web:     Downloading: 40%web:     Downloading: 45%web:     Downloading: 50%web: web:     Downloading: 55%web:     Downloading: 60%web: web:     Downloading: 65%web:     Downloading: 70%web: web:     Downloading: 75%web: web:     Downloading: 80%web:     Downloading: 85%web: web:     Downloading: 90%web:     Downloading: 95%web: web:     Downloading: 100%web:     Downloading: 100%
+web: 
+web:   - Installing symfony/routing (v2.4.4)
+web:     Downloading: connection...web: web:     Downloading: 0%           web:     Downloading: 5%web:     Downloading: 10%    Downloading: 15%web:     Downloading: 20%web:     Downloading: 25%web:     Downloading: 30%web:     Downloading: 35%web:     Downloading: 40%web:     Downloading: 45%web:     Downloading: 50%web:     Downloading: 55%    Downloading: 60%web:     Downloading: 65%web:     Downloading: 70%    Downloading: 75%web:     Downloading: 80%web:     Downloading: 85%web:     Downloading: 90%web:     Downloading: 95%web:     Downloading: 100%
+web: 
+web:   - Installing symfony/process (v2.4.4)
+web:     Downloading: connection...web: web:     Downloading: 0%               Downloading: 10%web: web:     Downloading: 70%web:     Downloading: 80%web:     Downloading: 90%web:     Downloading: 100%
+web: 
+web:   - Installing symfony/dom-crawler (v2.4.4)
+web:     Downloading: connection...web: web:     Downloading: 0%               Downloading: 10%web:     Downloading: 20%web:     Downloading: 30%web:     Downloading: 40%    Downloading: 50%web:     Downloading: 60%web:     Downloading: 70%    Downloading: 80%web: web:     Downloading: 100%
+web: 
+web:   - Installing symfony/css-selector (v2.4.4)
+web:     Downloading: connection...web: web:     Downloading: 0%           web:     Downloading: 5%web: web:     Downloading: 60%web: web:     Downloading: 100%
+web: 
+web:   - Installing symfony/browser-kit (v2.4.4)
+web:     Downloading: connection...web: web:     Downloading: 0%           web:     Downloading: 45%web:     Downloading: 90%web:     Downloading: 100%
+web: 
+web:   - Installing swiftmailer/swiftmailer (v5.2.0)
+web:     Downloading: connection...web: web:     Downloading: 0%           web: web:     Downloading: 5%web: web:     Downloading: 10%web: web:     Downloading: 15%web: web:     Downloading: 20%web: web:     Downloading: 25%web: web:     Downloading: 30%web: web:     Downloading: 35%web: web:     Downloading: 40%web: web:     Downloading: 45%web: web:     Downloading: 50%web: web:     Downloading: 55%web: web:     Downloading: 60%web: web:     Downloading: 65%web: web:     Downloading: 70%web: web:     Downloading: 75%web: web:     Downloading: 80%web:     Downloading: 85%web: web:     Downloading: 90%web: web:     Downloading: 95%web: web:     Downloading: 100%web:     Downloading: 100%
+web: 
+web:   - Installing stack/builder (v1.0.1)
+web:     Downloading: connection...web: web:     Downloading: 0%               Downloading: 25%web:     Downloading: 50%    Downloading: 75%web:     Downloading: 100%
+web: 
+web:   - Installing predis/predis (v0.8.5)
+web:     Downloading: connection...web: web:     Downloading: 0%           web: web:     Downloading: 5%web: web:     Downloading: 10%web: web:     Downloading: 15%web: web:     Downloading: 20%web: web:     Downloading: 25%web: web:     Downloading: 30%web: web:     Downloading: 35%web: web:     Downloading: 40%web: web:     Downloading: 45%web: web:     Downloading: 50%web:     Downloading: 55%web: web:     Downloading: 60%web: web:     Downloading: 65%web: web:     Downloading: 70%web:     Downloading: 75%web: web:     Downloading: 80%web: web:     Downloading: 85%web:     Downloading: 90%web: web:     Downloading: 95%web:     Downloading: 100%web:     Downloading: 100%web: 
+web: 
+web:   - Installing phpseclib/phpseclib (0.3.6)
+web:     Downloading: connection...web: web:     Downloading: 0%           web:     Downloading: 5%web:     Downloading: 10%web: web:     Downloading: 15%web:     Downloading: 20%web:     Downloading: 25%web: web:     Downloading: 30%web: web:     Downloading: 35%web:     Downloading: 40%web:     Downloading: 45%web:     Downloading: 50%web:     Downloading: 55%web: web:     Downloading: 60%web:     Downloading: 65%web:     Downloading: 70%web:     Downloading: 75%web:     Downloading: 80%web:     Downloading: 85%web:     Downloading: 90%web:     Downloading: 95%web:     Downloading: 100%web:     Downloading: 100%
+web: 
+web:   - Installing patchwork/utf8 (v1.1.22)
+web:     Downloading: connection...web: web:     Downloading: 0%           web: web:     Downloading: 5%web: web:     Downloading: 10%web: web:     Downloading: 15%web: web:     Downloading: 20%web: web:     Downloading: 25%web: web:     Downloading: 30%web:     Downloading: 35%web: web:     Downloading: 40%web: web:     Downloading: 45%web: web:     Downloading: 50%web: web:     Downloading: 55%web: web:     Downloading: 60%web: web:     Downloading: 65%web: web:     Downloading: 70%web:     Downloading: 75%web: web:     Downloading: 80%web: web:     Downloading: 85%web:     Downloading: 90%web: web:     Downloading: 95%web: web:     Downloading: 100%web:     Downloading: 100%
+web: 
+web:   - Installing nesbot/carbon (1.8.0)
+web:     Downloading: connection...web: web:     Downloading: 0%           web:     Downloading: 25%web:     Downloading: 50%    Downloading: 60%web:     Downloading: 75%    Downloading: 85%web:     Downloading: 100%web: 
+web: 
+web:   - Installing monolog/monolog (1.9.1)
+web:     Downloading: connection...web: web:     Downloading: 0%               Downloading: 5%web:     Downloading: 10%web:     Downloading: 15%web:     Downloading: 20%web:     Downloading: 25%web:     Downloading: 30%web:     Downloading: 35%web:     Downloading: 40%web:     Downloading: 45%web:     Downloading: 50%    Downloading: 55%web: web:     Downloading: 60%    Downloading: 65%web: web:     Downloading: 70%web:     Downloading: 75%    Downloading: 80%web:     Downloading: 85%web:     Downloading: 90%web:     Downloading: 95%web:     Downloading: 100%
+web: 
+web:   - Installing laravel/framework (v4.1.28)
+web:     Downloading: connection...web: web:     Downloading: 0%           web: web:     Downloading: 5%web: web:     Downloading: 10%web: web:     Downloading: 15%web: web:     Downloading: 20%web:     Downloading: 25%web: web:     Downloading: 30%web:     Downloading: 35%web: web:     Downloading: 40%web: web:     Downloading: 45%web:     Downloading: 50%web: web:     Downloading: 55%web: web:     Downloading: 60%web:     Downloading: 65%web: web:     Downloading: 70%web:     Downloading: 75%web:     Downloading: 80%    Downloading: 85%web:     Downloading: 90%web:     Downloading: 95%web:     Downloading: 100%web:     Downloading: 100%
+web: 
+web:   - Installing laracasts/utilities (1.0)
+web:     Downloading: connection...web: web:     Downloading: 0%           web:     Downloading: 80%web:     Downloading: 100%
+web: 
+web:   - Installing laracasts/validation (1.1.2)
+web:     Downloading: connection...web: web:     Downloading: 100%         
+web: 
+web:   - Installing way/generators (2.6)
+web:     Downloading: connection...web: web:     Downloading: 100%         
+web: 
+web: symfony/translation suggests installing symfony/config ()
+web: symfony/translation suggests installing symfony/yaml ()
+web: symfony/event-dispatcher suggests installing symfony/dependency-injection ()
+web: symfony/http-kernel suggests installing symfony/class-loader ()
+web: symfony/http-kernel suggests installing symfony/config ()
+web: symfony/http-kernel suggests installing symfony/dependency-injection ()
+web: symfony/security suggests installing doctrine/dbal (For using the built-in ACL implementation)
+web: symfony/security suggests installing symfony/class-loader (For using the ACL generateSql script)
+web: symfony/security suggests installing symfony/expression-language (For using the expression voter)
+web: symfony/security suggests installing symfony/validator (For using the user password constraint)
+web: symfony/routing suggests installing doctrine/annotations (For using the annotation loader)
+web: symfony/routing suggests installing symfony/config (For using the all-in-one router or any loader)
+web: symfony/routing suggests installing symfony/expression-language (For using expression matching)
+web: symfony/routing suggests installing symfony/yaml (For using the YAML loader)
+web: predis/predis suggests installing ext-phpiredis (Allows faster serialization and deserialization of the Redis protocol)
+web: phpseclib/phpseclib suggests installing ext-gmp (Install the GMP (GNU Multiple Precision) extension in order to speed up arbitrary precision integer arithmetic operations.)
+web: phpseclib/phpseclib suggests installing pear-pear/PHP_Compat (Install PHP_Compat to get phpseclib working on PHP < 4.3.3.)
+web: patchwork/utf8 suggests installing ext-intl (Use Intl for best performance)
+web: monolog/monolog suggests installing aws/aws-sdk-php (Allow sending log messages to AWS services like DynamoDB)
+web: monolog/monolog suggests installing doctrine/couchdb (Allow sending log messages to a CouchDB server)
+web: monolog/monolog suggests installing ext-amqp (Allow sending log messages to an AMQP server (1.0+ required))
+web: monolog/monolog suggests installing ext-mongo (Allow sending log messages to a MongoDB server)
+web: monolog/monolog suggests installing graylog2/gelf-php (Allow sending log messages to a GrayLog2 server)
+web: monolog/monolog suggests installing raven/raven (Allow sending log messages to a Sentry server)
+web: monolog/monolog suggests installing rollbar/rollbar (Allow sending log messages to Rollbar)
+web: monolog/monolog suggests installing ruflin/elastica (Allow sending log messages to an Elastic Search server)
+web: laravel/framework suggests installing doctrine/dbal (Allow renaming columns and dropping SQLite columns.)
+web: Generating autoload files
+web: 
+web: 
+                                                                                                               
+  [RuntimeException]                                                                                           
+  Could not scan for classes inside "app/database/migrations" which does not appear to be a file nor a folder  
+                                                                                                               
+
+
+install [--prefer-source] [--prefer-dist] [--dry-run] [--dev] [--no-dev] [--no-plugins] [--no-custom-installers] [--no-scripts] [--no-progress] [-v|vv|vvv|--verbose] [-o|--optimize-autoloader] [packages1] ... [packagesN]
+
+

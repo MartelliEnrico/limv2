@@ -10,7 +10,7 @@
 
         <thead>
             <tr>
-                <th></th>
+                <th class="clmn-hour"></th>
                 <th>{{ $days[1] }}</th>
                 <th>{{ $days[2] }}</th>
                 <th>{{ $days[3] }}</th>
@@ -23,7 +23,7 @@
         <tbody>
             @for($y = 1; $y <= 6; $y++)
             <tr>
-                <th>{{ $hours[$y] }}</th>
+                <th class="clmn-hour">{{ $hours[$y] }}</th>
                 @for($x = 1; $x <= 6; $x++)
                 <td>@include('lims.partials.cell')</td>
                 @endfor

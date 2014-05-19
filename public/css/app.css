@@ -615,3 +615,11 @@ table input[type="submit"] {
   text-align: center;
   line-height: 20px;
 }
+
+table td, table th {
+  width: 140px;
+}
+
+table .clmn-hour {
+  width: 100px;
+}

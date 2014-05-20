@@ -601,9 +601,9 @@ a {
 .footer {
   color: #777;
   font-size: 0.8em;
-  margin-top: 20px;
+  margin-top: 40px;
   border-top: 1px solid #ccc;
-  padding-top: 20px;
+  padding-top: 16px;
 }
 
 table {

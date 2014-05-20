@@ -617,9 +617,16 @@ table input[type="submit"] {
 }
 
 table td, table th {
-  width: 140px;
+  width: 145px;
+  border: 1px solid #eee;
+  padding: 16px 8px;
 }
 
 table .clmn-hour {
-  width: 100px;
+  width: 60px;
+  font-size: 0.8em;
+  color: #666;
+  font-weight: normal;
+  text-transform: uppercase;
 }
+

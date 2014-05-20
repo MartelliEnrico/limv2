@@ -19,7 +19,7 @@
     @endif
     
     @if(Auth::check() && Auth::user()->group == 'admin')
-    <p>{{ link_to_route('lims.create', 'Crea una nuova lim.', null, ['class' => 'button']) }}</p>
+    <p class="clear">{{ link_to_route('lims.create', 'Crea una nuova lim.', null, ['class' => 'button']) }}</p>
     @endif
 
 @stop

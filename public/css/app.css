@@ -599,6 +599,7 @@ table {
 
 table td {
   position: relative;
+  height: 54px;
 }
 
 table input[type="submit"] {

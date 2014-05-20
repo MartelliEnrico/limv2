@@ -28,6 +28,8 @@
         @endif
 
         @yield('content')
+        
+        <p class="footer">Tesina realizzata da <a href="http://enrico.martelli.me">Enrico Martelli</a> &mdash; <a href="https://github.com/MartelliEnrico/limv2">Codice sorgente</a></p>
     </div>
 
     @include('layouts.partials.footer')

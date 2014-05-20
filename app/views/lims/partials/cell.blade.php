@@ -1,13 +1,13 @@
 @if(isset($table[$x][$y]))
 <?php $hour = $table[$x][$y]; ?>
-Classe {{ $hour['classes']['name'] }}
+<span class="line-class">Classe {{ $hour['classes']['name'] }}</span>
 @if($hour['reservable_type'] == 'LimManager\Entities\Weekboard')
-<br>Prof. {{ $hour['teacher']['full_name'] }}
+<br><span class="line-professor">Prof. {{ $hour['teacher']['full_name'] }}</span>
 @if(Auth::check() && (Auth::user()->id == $hour['teacher_id'] || Auth::user()->group == 'admin'))
-<br>{{ Form::open(['route' => ['lims.reserve.remove', $lim->id]]).
-        Form::hidden('hour_id', $hour['id']).
-        Form::submit('&times;').
-    Form::close() }}
+{{ Form::open(['route' => ['lims.reserve.remove', $lim->id]]).
+    Form::hidden('hour_id', $hour['id']).
+    Form::submit('&times;').
+Form::close() }}
 @endif
 @endif
 @else

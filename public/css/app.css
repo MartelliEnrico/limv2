@@ -593,9 +593,17 @@ a {
   float: right;
 }
 
-.clear {
+.clear, .footer {
   clear: both;
   width: 100%;
+}
+
+.footer {
+  color: #777;
+  font-size: 0.8em;
+  margin-top: 10px;
+  border-top: 1px solid #777;
+  padding-top: 10px;
 }
 
 table {

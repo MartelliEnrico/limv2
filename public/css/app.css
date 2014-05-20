@@ -616,6 +616,10 @@ table input[type="submit"] {
   line-height: 20px;
 }
 
+table input[type="checkbox"] {
+  margin-right: 4px;
+}
+
 table td, table th {
   width: 145px;
   border: 1px solid #eee;

@@ -13,7 +13,5 @@ Form::close() }}
 @else
 @if(Auth::check() && Auth::user()->group == 'teacher')
 {{ Form::checkbox("hour-$x-$y", "[$x,$y]", false, ['id' => "hour-$x-$y"]).Form::label("hour-$x-$y", 'Seleziona') }}
-@else
-...
 @endif
 @endif

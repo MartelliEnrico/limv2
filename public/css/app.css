@@ -634,3 +634,11 @@ table .clmn-hour {
   text-transform: uppercase;
 }
 
+table .line-class {
+  font-size: 1.1em;
+}
+
+table .line-professor {
+  font-size: 0.9em;
+  border-bottom: 1px solid #ccc;
+}

@@ -5,7 +5,6 @@
 	"license": "MIT",
 	"require": {
 		"laravel/framework": "4.1.*",
-        "laracasts/utilities": "1.0",
         "laracasts/validation": "~1.0"
 	},
 	"require-dev": {

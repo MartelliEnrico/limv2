@@ -120,7 +120,6 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 
-		'Laracasts\Utilities\UtilitiesServiceProvider',
 		'Laracasts\Validation\ValidationServiceProvider',
 		'Way\Generators\GeneratorsServiceProvider',
 	),

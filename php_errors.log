@@ -226,3 +226,28 @@
  in Unknown on line 0
 [12-May-2014 13:01:09 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\php_pspell.dll' - Impossibile trovare il modulo specificato.
  in Unknown on line 0
+[21-May-2014 15:22:57 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\php_interbase.dll' - Impossibile trovare il modulo specificato.
+ in Unknown on line 0
+[21-May-2014 15:22:58 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\php_pspell.dll' - Impossibile trovare il modulo specificato.
+ in Unknown on line 0
+[21-May-2014 15:23:36 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\php_interbase.dll' - Impossibile trovare il modulo specificato.
+ in Unknown on line 0
+[21-May-2014 15:23:36 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\php_pspell.dll' - Impossibile trovare il modulo specificato.
+ in Unknown on line 0
+[21-May-2014 15:23:36 UTC] PHP Fatal error:  Class 'Laracasts\Utilities\UtilitiesServiceProvider' not found in C:\Users\Enrico\Websites\limv2\vendor\laravel\framework\src\Illuminate\Foundation\ProviderRepository.php on line 158
+[21-May-2014 15:24:03 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\php_interbase.dll' - Impossibile trovare il modulo specificato.
+ in Unknown on line 0
+[21-May-2014 15:24:03 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\php_pspell.dll' - Impossibile trovare il modulo specificato.
+ in Unknown on line 0
+[21-May-2014 15:24:12 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\php_interbase.dll' - Impossibile trovare il modulo specificato.
+ in Unknown on line 0
+[21-May-2014 15:24:12 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\php_pspell.dll' - Impossibile trovare il modulo specificato.
+ in Unknown on line 0
+[21-May-2014 15:24:12 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\php_interbase.dll' - Impossibile trovare il modulo specificato.
+ in Unknown on line 0
+[21-May-2014 15:24:12 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\php_pspell.dll' - Impossibile trovare il modulo specificato.
+ in Unknown on line 0
+[21-May-2014 15:24:12 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\php_interbase.dll' - Impossibile trovare il modulo specificato.
+ in Unknown on line 0
+[21-May-2014 15:24:12 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\php_pspell.dll' - Impossibile trovare il modulo specificato.
+ in Unknown on line 0

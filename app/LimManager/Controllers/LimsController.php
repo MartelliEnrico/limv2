@@ -91,27 +91,7 @@ class LimsController extends Controller {
             $table[$hour->day][$hour->hour] = $hour->toArray();
         });
 
-        $classes = Classes::all()->lists('name', 'id');
-
-        $days = [
-            1 => 'Lunedì',
-            2 => 'Martedì',
-            3 => 'Mercoledì',
-            4 => 'Giovedì',
-            5 => 'Venerdì',
-            6 => 'Sabato'
-        ];
-
-        $hours = [
-            1 => '1° ora',
-            2 => '2° ora',
-            3 => '3° ora',
-            4 => '4° ora',
-            5 => '5° ora',
-            6 => '6° ora'
-        ];
-
-        return View::make('lims.show', compact('lim', 'table', 'classes', 'days', 'hours'));
+        return View::make('lims.show', compact('lim', 'table'));
     }
 
     public function reserve($id)
@@ -211,27 +191,7 @@ class LimsController extends Controller {
             $table[$hour->day][$hour->hour] = $hour->toArray();
         });
 
-        $classes = Classes::all()->lists('name', 'id');
-
-        $days = [
-            1 => 'Lunedì',
-            2 => 'Martedì',
-            3 => 'Mercoledì',
-            4 => 'Giovedì',
-            5 => 'Venerdì',
-            6 => 'Sabato'
-        ];
-
-        $hours = [
-            1 => '1° ora',
-            2 => '2° ora',
-            3 => '3° ora',
-            4 => '4° ora',
-            5 => '5° ora',
-            6 => '6° ora'
-        ];
-
-        return View::make('lims.edit', compact('lim', 'table', 'classes', 'days', 'hours'));
+        return View::make('lims.edit', compact('lim', 'table'));
     }
 
     public function update($id)

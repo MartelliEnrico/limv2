@@ -15,10 +15,10 @@ class UserTableSeeder extends Seeder {
         ]);
 
         LimManager\Entities\User::create([
-            'username' => 'sica.annamaria',
+            'username' => 'professore',
             'password' => '123456',
-            'first_name' => 'Annamaria',
-            'last_name' => 'Sica',
+            'first_name' => 'Pinco',
+            'last_name' => 'Pallo',
             'group' => 'teacher'
         ]);
 

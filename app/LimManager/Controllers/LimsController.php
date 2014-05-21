@@ -1,11 +1,12 @@
 <?php namespace LimManager\Controllers;
 
 use Illuminate\Routing\Controller;
+use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
-use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Event;
 use Exception;
 
 use LimManager\Entities\Lim;
@@ -50,6 +51,12 @@ class LimsController extends Controller {
     public function index()
     {
         $lims = Lim::all();
+
+        if(Auth::check() && Auth::user()->group == 'admin') {
+            $lims = Lim::all();
+        } else {
+            $lims = Lim::where('working', true)->get();
+        }
 
         return View::make('lims.index', compact('lims'));
     }
@@ -100,7 +107,7 @@ class LimsController extends Controller {
 
         $hours = json_decode($input['hours']);
 
-        $week = Lim::find($id)->currentWeekboard();
+        $week = Lim::find($id)->currentWeekboard(Input::get('week'));
 
         foreach($hours as $hour)
         {
@@ -203,6 +210,17 @@ class LimsController extends Controller {
         $lim->save();
 
         return Redirect::back()->withFlashMessage('Lim modificata con successo.');
+    }
+
+    public function disable($id)
+    {
+        $lim = Lim::find($id);
+        $lim->working = ! $lim->working;
+        $lim->save();
+
+        Event::fire('lim.changed_state', [$lim]);
+
+        return Redirect::back()->withFlashMessage('Lim '.($lim->working ? 'abilitata' : 'disabilitata').' con successo.');
     }
 
     public function destroy($id)

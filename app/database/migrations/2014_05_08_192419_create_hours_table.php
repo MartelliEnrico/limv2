@@ -17,7 +17,7 @@ class CreateHoursTable extends Migration {
 			$table->integer('day')->unsigned();
 			$table->integer('hour')->unsigned();
 			$table->integer('teacher_id')->unsigned()->nullable();
-			$table->integer('class_id')->unsigned();
+			$table->integer('class_id')->unsigned()->nullable();
 			$table->morphs('reservable');
 			$table->timestamps();
 

@@ -17,7 +17,7 @@ $(function() {
         if($a.data('method') === 'DELETE') {
             e.preventDefault();
             
-            var answer = confirm("Are you sure?");
+            var answer = confirm("Ne sei sicuro?");
             answer && makeRequest($a.data('method'), $a.attr('href'));
         }
     });

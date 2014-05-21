@@ -435,7 +435,7 @@ a {
   text-decoration: none;
 }
 
-h1 {
+h1.float {
   float: left;
   margin-top: 0;
 }

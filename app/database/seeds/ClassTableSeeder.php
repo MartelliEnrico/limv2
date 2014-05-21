@@ -7,6 +7,7 @@ class ClassTableSeeder extends Seeder {
         DB::table('classes')->delete();
 
         $Classes = [
+            "Altre Attivit&agrave;",
             "1Ac", "1Ae", "1AF", "1Ai", "1Am", "1Be", "1BF", "1Bi", "1Bm", "1CF", "1Ci", "1Cm", "1DF", "1Di", "1Ei", 
             "2Ac", "2Ae", "2AF", "2Ai", "2Am", "2Bc", "2Be", "2BF", "2Bi", "2Bm", "2CF", "2Ci", "2DF", 
             "3Ac", "3Ael", "3Aet", "3AF", "3Ai", "3Am", "3BF", "3Bi", "3Bm", "3CF", "3Ci", 

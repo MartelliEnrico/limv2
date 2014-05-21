@@ -15,6 +15,7 @@ class CreateLimsTable extends Migration {
 		Schema::create('lims', function(Blueprint $table) {
 			$table->increments('id');
 			$table->string('name')->unique();
+			$table->boolean('working')->default(true);
 			$table->timestamps();
 		});
 	}

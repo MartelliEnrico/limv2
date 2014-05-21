@@ -16,6 +16,14 @@
 
     {{ Form::close() }}
 
+    {{ Form::open(['route' => ['lims.disable', $lim->id]]) }}
+
+        <h3>Stato Lim</h3>
+
+        {{ form_submit($lim->working ? 'Disabilita' : 'Abilita') }}
+
+    {{ Form::close() }}
+
     <h3>Modifica classi</h3>
     
     <table class="reservable-table">

@@ -4,7 +4,7 @@
 
 @section('content')
 
-    <h1>Lim {{ $lim->name }}</h1>
+    <h1 class="float">Lim {{ $lim->name }}</h1>
 
     <div class="week-chooser">{{ form_select('weeks', 'Seleziona settimana:', $weeks, $errors, Input::get('week')) }}</div>
 
@@ -36,7 +36,7 @@
     </table>
 
     @if(Auth::check() && Auth::user()->group == 'teacher')
-    {{ Form::open(['route' => ['lims.reserve', $lim->id], 'id' => 'reservable']) }}
+    {{ Form::open(['url' => route('lims.reserve', $lim->id).(Input::has('week') ? '?week='.Input::get('week') : ''), 'id' => 'reservable']) }}
 
         {{ form_hidden('hours', $errors) }}
 

@@ -4,7 +4,7 @@ use Carbon\Carbon;
 
 class Lim extends \Eloquent {
 
-    protected $fillable = ['name'];
+    protected $fillable = ['name', 'created_at', 'updated_at'];
 
     public function weekboards()
     {
@@ -26,7 +26,11 @@ class Lim extends \Eloquent {
 
         if(is_null($weekboard))
         {
-            $weekboard = Weekboard::create(['lim_id' => $this->id]);
+            $weekboard = new Weekboard;
+            $weekboard->lim_id = $this->id;
+            $weekboard->created_at = $start;
+            $weekboard->updated_at = $start;
+            $weekboard->save();
         }
 
         return $weekboard;

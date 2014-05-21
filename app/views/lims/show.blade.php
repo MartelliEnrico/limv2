@@ -6,6 +6,8 @@
 
     <h1>Lim {{ $lim->name }}</h1>
 
+    <div class="week-chooser">{{ form_select('weeks', 'Seleziona settimana:', $weeks, $errors, Input::get('week')) }}</div>
+
     <table class="reservable-table">
 
         <thead>

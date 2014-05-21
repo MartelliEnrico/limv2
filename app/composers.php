@@ -2,7 +2,7 @@
 
 View::composer(['lims.show', 'lims.edit'], function($view)
 {
-    $view->with('classes', Classes::all()->lists('name', 'id'));
+    $view->with('classes', LimManager\Entities\Classes::all()->lists('name', 'id'));
 
     $view->with('days', [
         1 => 'Lunedì',
@@ -21,4 +21,17 @@ View::composer(['lims.show', 'lims.edit'], function($view)
         5 => '5° ora',
         6 => '6° ora'
     ]);
+});
+
+View::composer('lims.show', function($view)
+{
+    $weeks = [];
+
+    for($i = 0; $i < 5; $i++)
+    {
+        $weeks[date('Y-m-d', strtotime(date('o-\\WW')." +$i week"))] = date('d/m/Y', strtotime(date('o-\\WW')." +$i week")).
+                " - ".date('d/m/Y', strtotime(date('o-\\WW')." +$i week +6 day")); 
+    }
+
+    $view->with('weeks', $weeks);
 });

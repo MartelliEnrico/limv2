@@ -38,4 +38,9 @@ $(function() {
             $form.find('input[name="hours"]').val('['+ids.replace(/,+$/, '')+']');
         }
     });
+
+    $('#weeks').on('change', function(e) {
+        var week = $(this).val();
+        location.href = location.href.split('?')[0] + '?week=' + week;
+    });
 });

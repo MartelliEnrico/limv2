@@ -251,3 +251,12 @@
  in Unknown on line 0
 [21-May-2014 15:24:12 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\php_pspell.dll' - Impossibile trovare il modulo specificato.
  in Unknown on line 0
+[21-May-2014 15:38:49 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\php_interbase.dll' - Impossibile trovare il modulo specificato.
+ in Unknown on line 0
+[21-May-2014 15:38:49 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\php_pspell.dll' - Impossibile trovare il modulo specificato.
+ in Unknown on line 0
+[21-May-2014 15:38:54 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\php_interbase.dll' - Impossibile trovare il modulo specificato.
+ in Unknown on line 0
+[21-May-2014 15:38:54 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\php_pspell.dll' - Impossibile trovare il modulo specificato.
+ in Unknown on line 0
+[21-May-2014 15:56:41 UTC] PHP Fatal error:  Class 'Classes' not found in C:\Users\Enrico\Websites\limv2\app\composers.php on line 5

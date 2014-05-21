@@ -71,7 +71,7 @@ class LimsController extends Controller {
     public function show($id)
     {
         $lim = Lim::find($id);
-        $week = $lim->currentWeekboard();
+        $week = $lim->currentWeekboard(Input::get('week'));
         $persistents = $lim->persistents;
 
         $limsHours = $week->hours()->with('classes', 'teacher')->get();

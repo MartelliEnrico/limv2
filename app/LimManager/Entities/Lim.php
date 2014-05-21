@@ -16,9 +16,9 @@ class Lim extends \Eloquent {
         return $this->hasMany('LimManager\Entities\Persistent');
     }
 
-    public function currentWeekboard()
+    public function currentWeekboard($date = null)
     {
-        $week = Carbon::createFromFormat('Y-m-d', date("Y-m-d", strtotime(date('o-\\WW'))));
+        $week = Carbon::createFromTimeStamp(strtotime($date ?: date('o-\\WW')));
         $start = $week->startOfDay();
         $end = Carbon::instance($week)->addDays(6)->endOfDay();
 

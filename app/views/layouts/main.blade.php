@@ -20,7 +20,7 @@
         </div>
     </div>
 
-    <div class="container main">
+    <div class="container main {{ Request::url() === '/' ? 'home' : '' }}">
         @if(Session::has('flash_message'))
         <div class="message">
             {{ Session::get('flash_message') }}

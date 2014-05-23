@@ -631,6 +631,7 @@ h1.float {
 
 table {
   width: 100%;
+  clear: both;
 }
 
 table td {

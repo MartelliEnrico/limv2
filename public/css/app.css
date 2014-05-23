@@ -449,6 +449,11 @@ h1.float {
   margin-top: 40px;
 }
 
+.container > p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .message {
   background: #39b3d7;
   border: 1px solid #269abc;

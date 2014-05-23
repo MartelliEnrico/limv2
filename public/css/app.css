@@ -552,6 +552,7 @@ h1.float {
 
 .week-chooser {
   float: right;
+  padding-top: 8px;
 }
 
 .week-chooser .form-group {

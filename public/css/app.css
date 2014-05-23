@@ -438,6 +438,7 @@ a {
 h1.float {
   float: left;
   margin-top: 0;
+  margin-left: 10px;
 }
 
 .container {
@@ -557,6 +558,7 @@ h1.float {
 .week-chooser {
   float: right;
   padding-top: 8px;
+  margin-right: 10px;
 }
 
 .week-chooser .form-group {

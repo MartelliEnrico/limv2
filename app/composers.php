@@ -29,9 +29,9 @@ View::composer('lims.show', function($view)
 
     for($i = 0; $i < 4; $i++)
     {
-        $start = date('Y-m-d', strtotime(date('o-\\WW')." +$i week"));
-        $end = date('d/m/Y', strtotime(date('o-\\WW')." +$i week +6 day"));
-        $weeks[$start] = $start." - ".$end; 
+        $start = strtotime(date('o-\\WW')." +$i week");
+        $end = strtotime(date('o-\\WW')." +$i week +6 day");
+        $weeks[date('Y-m-d', $start)] = date('d/m/Y', $start)." - ".date('d/m/Y', $end); 
     }
 
     $view->with('weeks', $weeks);

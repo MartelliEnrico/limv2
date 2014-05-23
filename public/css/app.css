@@ -445,10 +445,6 @@ h1.float {
   margin: 0 auto;
 }
 
-.container > * {
-  padding: 0 10px;
-}
-
 .main {
   margin-top: 40px;
 }
@@ -574,8 +570,7 @@ h1.float {
   width: 220px;
   border-radius: 4px;
   background: #eee;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  margin: 10px;
 }
 
 .lims:nth-child(4n) {

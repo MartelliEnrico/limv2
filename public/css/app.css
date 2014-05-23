@@ -441,9 +441,12 @@ h1.float {
 }
 
 .container {
-  max-width: 940px;
-  padding: 0 10px;
+  max-width: 960px;
   margin: 0 auto;
+}
+
+.container > * {
+  padding: 0 10px;
 }
 
 .main {

@@ -442,8 +442,13 @@ h1.float {
 
 .container {
   max-width: 940px;
-  padding: 0 10px;
   margin: 0 auto;
+  padding: 0 10px;
+}
+
+.container.home {
+  max-width: 960px;
+  padding: 0;
 }
 
 .main {
@@ -552,6 +557,7 @@ h1.float {
 
 .week-chooser {
   float: right;
+  padding-top: 8px;
 }
 
 .week-chooser .form-group {
@@ -570,12 +576,7 @@ h1.float {
   width: 220px;
   border-radius: 4px;
   background: #eee;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-
-.lims:nth-child(4n) {
-  margin-right: 0;
+  margin: 10px;
 }
 
 .lims > a {
@@ -618,14 +619,19 @@ h1.float {
   width: 100%;
 }
 
+.clear {
+  margin-top: 40px;
+}
+
 .footer {
   color: #777;
   font-size: 0.8em;
-  padding-top: 40px;
+  padding: 40px 10px 10px;
 }
 
 table {
   width: 100%;
+  clear: both;
 }
 
 table td {

@@ -426,6 +426,10 @@ th {
 
 /* ========================================================================== */
 
+html, body {
+  height: 100%;
+}
+
 body {
   font: 16px/1.618 'Montserrat', sans-serif;
 }
@@ -438,6 +442,24 @@ a {
 h1.float {
   float: left;
   margin-top: 0;
+}
+
+code {
+  background: #ddd;
+  border-radius: 3px;
+  padding: 3px;
+}
+
+#installation {
+  width: 940px;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-left: -470px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .container {

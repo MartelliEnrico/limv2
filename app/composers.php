@@ -27,7 +27,7 @@ View::composer('lims.show', function($view)
 {
     $weeks = [];
 
-    for($i = 0; $i < 4; $i++)
+    for($i = 0, $n = Config::get('lim.total_viewable_weeks', 4); $i < $n; $i++)
     {
         $start = strtotime(date('o-\\WW')." +$i week");
         $end = strtotime(date('o-\\WW')." +$i week +6 day");

@@ -13,7 +13,7 @@
 
 Route::filter('auth', function()
 {
-	if (Auth::guest()) return Redirect::guest('login')->withInput();
+	if (Auth::guest()) return Redirect::guest('login');
 });
 
 
@@ -36,6 +36,16 @@ Route::filter('teacher', function()
     {
         return Redirect::back()->withFlashMessage('Non hai i diritti per accedere a questa funzione.');
     }
+});
+
+Route::filter('not_installed', function()
+{
+    if( ! Schema::hasTable('hours')) return Redirect::to('install');
+});
+
+Route::filter('installed', function()
+{
+    if( Schema::hasTable('hours')) return Redirect::to('/');
 });
 
 /*

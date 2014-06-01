@@ -13,14 +13,14 @@ View::composer(['lims.show', 'lims.edit'], function($view)
         6 => 'Sabato'
     ]);
 
-    $view->with('hours', [
-        1 => '1° ora',
-        2 => '2° ora',
-        3 => '3° ora',
-        4 => '4° ora',
-        5 => '5° ora',
-        6 => '6° ora'
-    ]);
+    $hours = [];
+
+    for($i = 1, $n = Config::get('lim.max_hours_number', 6); $i <= $n; $i++)
+    {
+        $hours[$i] = "$i<sup>a</sup> ora";
+    }
+
+    $view->with('hours', $hours);
 });
 
 View::composer('lims.show', function($view)

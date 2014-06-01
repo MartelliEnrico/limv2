@@ -73,6 +73,8 @@ class User extends \Eloquent implements UserInterface {
 
 	public function getFullNameAttribute()
 	{
+		if($this->group == 'admin') return 'Amministratore';
+		
 		return ucwords(substr($this->first_name, 0, 1).'. '.$this->last_name);
 	}
 

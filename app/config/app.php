@@ -123,6 +123,7 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 
 		'Laracasts\Validation\ValidationServiceProvider',
+		'LimManager\Config\ConfigServiceProvider',
 	),
 
 	/*

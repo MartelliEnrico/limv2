@@ -389,3 +389,23 @@
  in Unknown on line 0
 [01-Jun-2014 16:11:56 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ']' in C:\Users\Enrico\Websites\limv2\app\routes.php on line 18
 [01-Jun-2014 16:11:57 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ']' in C:\Users\Enrico\Websites\limv2\app\routes.php on line 18
+[01-Jun-2014 16:16:22 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\php_interbase.dll' - Impossibile trovare il modulo specificato.
+ in Unknown on line 0
+[01-Jun-2014 16:16:22 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\php_pspell.dll' - Impossibile trovare il modulo specificato.
+ in Unknown on line 0
+[02-Jun-2014 07:30:11 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\php_interbase.dll' - Impossibile trovare il modulo specificato.
+ in Unknown on line 0
+[02-Jun-2014 07:30:11 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\php_pspell.dll' - Impossibile trovare il modulo specificato.
+ in Unknown on line 0
+[02-Jun-2014 07:31:24 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\php_interbase.dll' - Impossibile trovare il modulo specificato.
+ in Unknown on line 0
+[02-Jun-2014 07:31:24 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\php_pspell.dll' - Impossibile trovare il modulo specificato.
+ in Unknown on line 0
+[02-Jun-2014 07:31:25 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\php_interbase.dll' - Impossibile trovare il modulo specificato.
+ in Unknown on line 0
+[02-Jun-2014 07:31:25 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\php_pspell.dll' - Impossibile trovare il modulo specificato.
+ in Unknown on line 0
+[02-Jun-2014 07:31:25 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\php_interbase.dll' - Impossibile trovare il modulo specificato.
+ in Unknown on line 0
+[02-Jun-2014 07:31:25 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'ext\php_pspell.dll' - Impossibile trovare il modulo specificato.
+ in Unknown on line 0

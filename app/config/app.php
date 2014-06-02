@@ -80,6 +80,8 @@ return array(
 
 	'key' => 'PU7ZG0hbrrggRRGqcDj0zAxhGESOaBdB',
 
+	'cipher' => MCRYPT_RIJNDAEL_256,
+
 	/*
 	|--------------------------------------------------------------------------
 	| Autoloaded Service Providers
@@ -121,7 +123,6 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 
 		'Laracasts\Validation\ValidationServiceProvider',
-		'Way\Generators\GeneratorsServiceProvider',
 	),
 
 	/*

@@ -9,3 +9,4 @@ Thumbs.db
 .vagrant
 *.bat
 .subl*
+php_errors.log

@@ -70,9 +70,9 @@ class LimsController extends Controller {
     {
         $this->limForm->validate($input = Input::only('name'));
 
-        Lim::create($input);
+        $lim = Lim::create($input);
 
-        return Redirect::back()->withFlashMessage('Lim creata con successo.');
+        return Redirect::route('lims.edit', [$lim->id])->withFlashMessage('Lim creata con successo.');
     }
 
     public function show($id)

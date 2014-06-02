@@ -1,4 +1,6 @@
 $(function() {
+    deleted = false;
+
     var makeRequest = function(method, target) {
         if(method === 'GET') {
             window.location.href = target;
@@ -16,9 +18,13 @@ $(function() {
         var $a = $(this);
         if($a.data('method') === 'DELETE') {
             e.preventDefault();
+            e.stopPropagation();
             
-            var answer = confirm("Ne sei sicuro?");
-            answer && makeRequest($a.data('method'), $a.attr('href'));
+            if( ! deleted) {
+                deleted = true;
+
+                confirm("Ne sei sicuro?") && makeRequest($a.data('method'), $a.attr('href'));
+            }
         }
     });
 

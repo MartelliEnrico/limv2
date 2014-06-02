@@ -11,7 +11,7 @@ class User extends \Eloquent implements UserInterface {
 	 */
 	protected $hidden = ['password'];
 
-	protected $fillable = ['username', 'password', 'first_name', 'last_name'];
+	protected $fillable = ['username', 'password', 'first_name', 'last_name', 'group'];
 
 	protected $appends = ['full_name'];
 

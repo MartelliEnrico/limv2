@@ -450,18 +450,6 @@ code {
   padding: 3px;
 }
 
-#installation {
-  width: 940px;
-  text-align: center;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  margin-left: -470px;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
 .container {
   max-width: 940px;
   margin: 0 auto;
@@ -506,7 +494,13 @@ code {
   margin: 0 auto 20px;
 }
 
-.form-group input, .button {
+td.form-group {
+  width: auto;
+  margin: 0;
+  height: 40px;
+}
+
+.form-group input, .form-group textarea, .button {
   display: block;
   background: linear-gradient(to bottom, #f7f7f8 0%, #ffffff 100%);
   border-radius: 3px;
@@ -519,22 +513,32 @@ code {
   padding-left: 16px;
 }
 
-.form-group input::-webkit-input-placeholder {
+.form-group input::-webkit-input-placeholder, .form-group textarea::-webkit-input-placeholder {
   color: #999999;
 }
 
-.form-group input:-moz-placeholder {
+.form-group input:-moz-placeholder, .form-group textarea::-moz-placeholder {
   color: #999999;
 }
 
-.form-group input:focus {
+.form-group input:focus, .form-group textarea:focus {
   box-shadow: 0 1px 0 #2392F3 inset, 0 -1px 0 #2392F3 inset, 1px 0 0 #2392F3 inset, -1px 0 0 #2392F3 inset, 0 0 4px rgba(35,146,243,0.5);
   outline: none;
   background: #FFF;
 }
 
-.form-group.has-error input, .form-group.has-error input:focus {
+.form-group.has-error input, .form-group.has-error input:focus, .form-group.has-error textarea, .form-group.has-error textarea:focus {
   box-shadow: 0 1px 0 #F32323 inset, 0 -1px 0 #F32323 inset, 1px 0 0 #F32323 inset, -1px 0 0 #F32323 inset, 0 0 4px rgba(243,35,35,0.5);
+}
+
+.form-group textarea {
+  height: 180px;
+  padding-left: 6px;
+  width: 310px;
+}
+
+td.form-group input {
+  width: 201px;
 }
 
 .form-group input[type="submit"], .button {

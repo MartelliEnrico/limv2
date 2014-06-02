@@ -1,6 +1,6 @@
 <?php 
 
-Route::group(['before' => 'not_installed'], function()
+Route::group(['before' => 'installed'], function()
 {
     Route::get('login', 'LimManager\Controllers\AuthController@login');
     Route::post('login', 'LimManager\Controllers\AuthController@postLogin');

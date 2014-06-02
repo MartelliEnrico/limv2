@@ -23,7 +23,7 @@
         </thead>
 
         <tbody>
-            @for($y = 1; $y <= 6; $y++)
+            @for($y = 1; $y <= Config::get('lim.max_hours_number'); $y++)
             <tr>
                 <th class="clmn-hour">{{ $hours[$y] }}</th>
                 @for($x = 1; $x <= 6; $x++)

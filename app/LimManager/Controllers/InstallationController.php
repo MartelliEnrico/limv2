@@ -2,8 +2,9 @@
 
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Artisan;
-use Illuminate\Config\Repository;
+use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\View;
 
 use LimManager\Entities\User;
@@ -12,36 +13,82 @@ use LimManager\Entities\Classes;
 
 class InstallationController extends Controller {
 
-    protected $config;
-
-    public function __construct(Repository $config)
+    public function __construct()
     {
-        $this->config = $config;
-
-        $this->beforeFilter('installed');
+        $this->beforeFilter('csrf', ['only' => 'postInstall']);
+        $this->beforeFilter('not_installed', ['only' => ['getInstall', 'postInstall']]);
+        $this->beforeFilter('installed', ['only' => ['getReset', 'postReset']]);
+        $this->beforeFilter('auth', ['only' => ['getReset', 'postReset']]);
+        $this->beforeFilter('admin', ['only' => ['getReset', 'postReset']]);
     }
 
     public function getInstall()
     {
-        return View::make('installation.index');
+        return View::make('installation.install');
     }
 
-    public function getStart()
+    public function postInstall()
     {
-        Artisan::call('migrate');
+        $config = Input::all();
 
-        $this->seedAdmins();
-        $this->seedTeachers();
-        $this->seedLims();
-        $this->seedClasses();
+        $this->writeAllConfig($config);
+
+        $this->migrate($config);
 
         return Redirect::to('/');
     }
 
-    private function seedAdmins()
+    public function postReset()
     {
-        $admins = $this->config->get('lim.admins');
+        $this->rollback();
 
+        return Redirect::to('install');
+    }
+
+    private function writeAllConfig(array $c = [])
+    {
+        $keys = [
+            'database.connections.mysql.host',
+            'database.connections.mysql.database',
+            'database.connections.mysql.username',
+            'database.connections.mysql.password',
+            'database.connections.mysql.charset',
+            'database.connections.mysql.collation',
+            'database.connections.mysql.prefix',
+            'lim.max_hours_number',
+            'lim.total_viewable_weeks',
+            'lim.lims',
+            'lim.classes'
+        ];
+
+        foreach($keys as $key)
+        {
+            $this->writeConfig($key, $c);
+        }
+    }
+
+    private function writeConfig($key, array $config = [])
+    {
+        Config::write($key, array_get($config, $key));
+    }
+
+    private function migrate(array $c = [])
+    {
+        Artisan::call('migrate');
+
+        $this->seedAdmins($c['lim']['admins']);
+        $this->seedTeachers($c['lim']['teachers']);
+        $this->seedLims();
+        $this->seedClasses();
+    }
+
+    private function rollback()
+    {
+        Artisan::call('migrate:rollback');
+    }
+
+    private function seedAdmins(array $admins = [])
+    {
         foreach($admins as $admin)
         {
             $admin['group'] = 'admin';
@@ -50,10 +97,8 @@ class InstallationController extends Controller {
         }
     }
 
-    private function seedTeachers()
+    private function seedTeachers(array $teachers = [])
     {
-        $teachers = $this->config->get('lim.teachers');
-
         foreach($teachers as $teacher)
         {
             $teacher['group'] = 'teacher';
@@ -64,7 +109,7 @@ class InstallationController extends Controller {
 
     private function seedLims()
     {
-        $lims = $this->config->get('lim.lims');
+        $lims = preg_split("/[\s,]+/", Config::get('lim.lims'));
 
         foreach($lims as $lim)
         {
@@ -74,7 +119,7 @@ class InstallationController extends Controller {
 
     private function seedClasses()
     {
-        $classes = $this->config->get('lim.classes');
+        $classes = preg_split("/[\s,]+/", Config::get('lim.classes'));
 
         foreach($classes as $class)
         {

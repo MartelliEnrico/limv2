@@ -38,12 +38,12 @@ Route::filter('teacher', function()
     }
 });
 
-Route::filter('not_installed', function()
+Route::filter('installed', function()
 {
     if( ! Schema::hasTable('hours')) return Redirect::to('install');
 });
 
-Route::filter('installed', function()
+Route::filter('not_installed', function()
 {
     if( Schema::hasTable('hours')) return Redirect::to('/');
 });

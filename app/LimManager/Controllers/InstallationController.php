@@ -23,7 +23,10 @@ class InstallationController extends Controller {
     }
 
     public function getInstall()
-    {
+    { 
+        if(Input::get('key') !== Config::get('lim.reset_key'))
+            return View::make('installation.index');
+
         return View::make('installation.install');
     }
 
@@ -42,7 +45,11 @@ class InstallationController extends Controller {
     {
         $this->rollback();
 
-        return Redirect::to('install');
+        //$key = str_random(64);
+
+        //Config::write('lim.reset_key', $key);
+
+        return Redirect::to('install')->with('key', Config::get('lim.reset_key'));
     }
 
     private function writeAllConfig(array $c = [])

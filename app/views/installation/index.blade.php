@@ -2,9 +2,16 @@
 
 @section('body')
 
-<div id="installation">
-    <p>Hai configurato adeguatamente il file <code>app/config/lim.php</code>? Allora procedi all'installazione.</p>
-    <a href="{{ url('start') }}" class="button">Installa LimManager</a>
+<div class="container" style="margin-bottom: 40px">
+
+    {{ Form::open(['method' => 'GET']) }}
+        
+        {{ Form::text('key', Session::get('key', null)) }}
+
+        {{ Form::submit('Configura Installazione', ['class' => 'button']) }}
+
+    {{ Form::close() }}
+
 </div>
 
 @stop

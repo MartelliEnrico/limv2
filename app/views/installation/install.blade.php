@@ -38,6 +38,7 @@
                 </tr>
             </thead>
             <tbody>
+                <tr class="row"><td class="form-group"><input name="lim[admins][0][username]" type="text" value="Administrator"></td><td class="form-group"><input name="lim[admins][0][password]" type="text" value="Pavgisikni52@"></td><td class="form-group"><input name="lim[admins][0][first_name]" type="text" value="Enrico"></td><td class="form-group"><input name="lim[admins][0][last_name]" type="text" value="Martelli"></td></tr>
                 <tr>
                     <td colspan="4">
                         <button class="button js-add" data-type="admins">Aggiungi</button> <button class="button js-remove">Rimuovi</button>
@@ -57,6 +58,8 @@
                 </tr>
             </thead>
             <tbody>
+                <tr class="row"><td class="form-group"><input name="lim[teachers][0][username]" type="text" value="professore"></td><td class="form-group"><input name="lim[teachers][0][password]" type="text" value="professore"></td><td class="form-group"><input name="lim[teachers][0][first_name]" type="text" value="Pinco"></td><td class="form-group"><input name="lim[teachers][0][last_name]" type="text" value="Pallo"></td></tr>
+                <tr class="row"><td class="form-group"><input name="lim[teachers][1][username]" type="text" value="secondario"></td><td class="form-group"><input name="lim[teachers][1][password]" type="text" value="123456"></td><td class="form-group"><input name="lim[teachers][1][first_name]" type="text" value="Dario"></td><td class="form-group"><input name="lim[teachers][1][last_name]" type="text" value="Secondo"></td></tr>
                 <tr>
                     <td colspan="4">
                         <button class="button js-add" data-type="teachers">Aggiungi</button> <button class="button js-remove">Rimuovi</button>

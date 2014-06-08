@@ -119,7 +119,7 @@ class InstallationController extends Controller {
 
     private function seedClasses()
     {
-        $classes = preg_split("/[\s,]+/", Config::get('lim.classes'));
+        $classes = preg_split("/,[\s]+/", Config::get('lim.classes'));
 
         foreach($classes as $class)
         {

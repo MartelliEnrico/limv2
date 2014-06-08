@@ -109,7 +109,7 @@ class InstallationController extends Controller {
 
     private function seedLims()
     {
-        $lims = preg_split("/[\s,]+/", Config::get('lim.lims'));
+        $lims = preg_split("/,[\s]+/", Config::get('lim.lims'));
 
         foreach($lims as $lim)
         {

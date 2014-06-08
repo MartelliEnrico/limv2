@@ -81,7 +81,7 @@ class InstallationController extends Controller {
 
     private function migrate(array $c = [])
     {
-        Artisan::call('migrate');
+        Artisan::call('migrate', ['--force' => true]);
 
         $this->seedAdmins($c['lim']['admins']);
         $this->seedTeachers($c['lim']['teachers']);
@@ -91,7 +91,7 @@ class InstallationController extends Controller {
 
     private function rollback()
     {
-        Artisan::call('migrate:rollback');
+        Artisan::call('migrate:rollback', ['--force' => true]);
     }
 
     private function seedAdmins(array $admins = [])

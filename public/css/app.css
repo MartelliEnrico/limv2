@@ -708,7 +708,7 @@ table .line-professor {
 
 @media (max-width: 320px) {
   .lims {
-    width: 100%;
+    width: 93%;
     -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box; 
     box-sizing: border-box;
@@ -717,7 +717,7 @@ table .line-professor {
 
 @media (min-width: 320px) and (max-width: 720px) {
   .lims {
-    width: 50%;
+    width: 47%;
     -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box; 
     box-sizing: border-box;

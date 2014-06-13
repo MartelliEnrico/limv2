@@ -715,10 +715,8 @@ table .line-professor {
   }
   
   .lims .functions a {
-    border-radius: 3px;
     padding: 4px 8px;
-    color: #fff;
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 }
 
@@ -731,9 +729,7 @@ table .line-professor {
   }
   
   .lims .functions a {
-    border-radius: 3px;
     padding: 4px 8px;
-    color: #fff;
-    font-size: 0.9em;
+    font-size: 0.7em;
   }
 }

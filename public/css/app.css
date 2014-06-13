@@ -705,3 +705,18 @@ table .line-professor {
   font-size: 0.9em;
   border-bottom: 1px solid #ccc;
 }
+
+@media (max-width: 320px) {
+  .lim {
+    width: auto;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 720px) {
+  .lim {
+    width: 50%;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+  }
+}
